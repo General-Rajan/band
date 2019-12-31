@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}"/>
+  </head>
+  <body>
+
+  <div class="your-class" style="max-height: 100px;">
+    <div> <img class="card-img"
+                 src="https://www.nepaliechords.com/wp-content/uploads/2018/11/45490527_2064684703596794_4487775808210862080_n-2-750x272.jpg"
+                 alt="Card image cap"></div>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/slick.min.js' %}" ></script>
+
+  <script type="text/javascript">
+  $(document).ready(function () {
+$('.your-class').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+  })
+
+
+  </script>
+
+  </body>
+</html>
